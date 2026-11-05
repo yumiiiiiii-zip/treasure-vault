@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TREASURE Cyber Vault 💖👾</title>
+
+  <!-- 引進像素字體：Silkscreen (英文) + Zpix (中文像素字體) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/gh/TakWolf/zpix-pixel-font@v3.1.9/dist/zpix.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* 1. 設定全站中文與英文均優先使用像素字體，並優化像素渲染抗鋸齒 */
+    body, h1, h2, h3, h4, p, span, a, button, div {
+      font-family: 'Zpix', 'Silkscreen', monospace, "Courier New" !important;
+      font-smooth: never;
+      -webkit-font-smoothing: none;
+      -moz-osx-font-smoothing: unset;
+    }
+
+    /* 2. 標題與 MORE 按鈕並排樣式 */
+    .section-header-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .btn-more {
+      font-size: 0.85rem;
+      color: #9333ea;
+      background: #ffffff;
+      border: 2px solid #c084fc;
+      padding: 6px 14px;
+      border-radius: 6px;
+      text-decoration: none;
+      box-shadow: 3px 3px 0px rgba(168, 85, 247, 0.3);
+      transition: all 0.15s ease;
+    }
+    .btn-more:hover {
+      background: #f3e8ff;
+      transform: translate(-1px, -1px);
+      box-shadow: 4px 4px 0px rgba(168, 85, 247, 0.4);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 頂部選單 -->
+  <header class="header">
+    <div class="container header-content">
+      <a href="index.html" class="logo">👾 TREASURE<span>.exe</span></a>
+      <nav class="nav-links">
+        <a href="#members-section">[ 成員檔案 ]</a>
+        <a href="#fancams-section">[ 全員直拍 Archive ]</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Hero Header -->
+    <section class="hero">
+      <h1>TREASURE SYSTEM VAULT</h1>
+      <p>✨ Let's find tour TREASURE ✨</p>
+    </section>
+
+    <!-- ================= SECTION 1: 成員檢索區 (簡潔預覽) ================= -->
+    <section id="members-section" style="margin-top: 20px;">
+      <div class="section-header-flex">
+        <h2 class="section-title" style="margin-bottom: 0;">SECTION 1 : 成員檔案庫</h2>
+        <a href="#fancams-section" class="btn-more">MORE 成員 ➔</a>
+      </div>
+      
+      <div class="grid">
+        <!-- 1. 崔玹碩 -->
+        <a href="members/choi-hyunsuk.html" class="window" style="text-decoration: none;">
+          <div class="window-header">
+            <span>[🦔 Profile_HyunSuk.exe]</span>
+            <div class="window-controls"><span></span><span></span><span></span></div>
+          </div>
+          <div class="window-body">
+            <span class="badge-tag">MAIN RAPPER / MAIN DANCER</span>
+            <h3 class="window-title">崔玹碩 Choi Hyun-suk</h3>
+            <p class="window-subtitle">1999.04.21 • 🦔</p>
+            <p class="window-desc">舞台氣場全開的主 Rapper 與 Main Dancer，兼具音樂創作才華！</p>
+            <span class="btn-pixel">查看完整檔案 ➔</span>
+          </div>
+        </a>
+
+        <!-- 2. 朴志焄 -->
+        <a href="members/jihoon.html" class="window" style="text-decoration: none;">
+          <div class="window-header">
+            <span>[🐶 Profile_JiHoon.exe]</span>
+            <div class="window-controls"><span></span><span></span><span></span></div>
+          </div>
+          <div class="window-body">
+            <span class="badge-tag" style="background:#e0e7ff; color:#4338ca; border-color:#818cf8;">LEAD VOCAL / MAIN DANCER</span>
+            <h3 class="window-title">朴志焄 Jihoon</h3>
+            <p class="window-subtitle">2000.03.14 • 🐶</p>
+            <p class="window-desc">核心領舞兼 Lead Vocal，甜美小狗顏與爆發力刀群舞的反差萌！</p>
+            <span class="btn-pixel">查看完整檔案 ➔</span>
+          </div>
+        </a>
+
+        <!-- 3. 尹材赫 -->
+        <a href="members/yoon-jae-hyuk.html" class="window" style="text-decoration: none;">
+          <div class="window-header">
+            <span>[🦁 Profile_JaeHyuk.exe]</span>
+            <div class="window-controls"><span></span><span></span><span></span></div>
+          </div>
+          <div class="window-body">
+            <span class="badge-tag" style="background:#fef3c7; color:#b45309; border-color:#f59e0b;">SUB VOCAL / DANCER</span>
+            <h3 class="window-title">尹材赫 Yoon Jae-hyuk</h3>
+            <p class="window-subtitle">2001.07.23 • 🦁</p>
+            <p class="window-desc">擁有溫暖陽光笑容與滿滿親和力，舞台上展現持續進化的舞蹈魅力！</p>
+            <span class="btn-pixel" style="background: linear-gradient(135deg, #f59e0b, #d97706); border-color:#b45309;">查看完整檔案 ➔</span>
+          </div>
+        </a>
+
+        <!-- 4. Yoshi (Coming Soon) -->
+        <div class="window disabled">
+          <div class="window-header">
+            <span>[🐯 Profile_Yoshi.sys]</span>
+            <div class="window-controls"><span></span><span></span><span></span></div>
+          </div>
+          <div class="window-body">
+            <span class="badge-tag" style="background:#f1f5f9; color:#64748b; border-color:#cbd5e1;">COMING SOON</span>
+            <h3 class="window-title">金本芳典 Yoshi</h3>
+            <p class="window-subtitle">2000.05.15 • 🐯</p>
+            <p class="window-desc">RAPPER / PRODUCER (檔案與個人頁擴充建置中...)</p>
+            <span class="btn-pixel btn-disabled">COMING SOON</span>
+          </div>
+        </div>
+
+        <!-- 5. Junkyu (Coming Soon) -->
+        <div class="window disabled">
+          <div class="window-header">
+            <span>[🐨 Profile_Junkyu.sys]</span>
+            <div class="window-controls"><span></span><span></span><span></span></div>
+          </div>
+          <div class="window-body">
+            <span class="badge-tag" style="background:#f1f5f9; color:#64748b; border-color:#cbd5e1;">COMING SOON</span>
+            <h3 class="window-title">金俊奎 Junkyu</h3>
+            <p class="window-subtitle">2000.09.09 • 🐨</p>
+            <p class="window-desc">VOCALIST / VISUAL (檔案與個人頁擴充建置中...)</p>
+            <span class="btn-pixel btn-disabled">COMING SOON</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SECTION 2: 全員經典直拍大集合 ================= -->
+    <section id="fancams-section" style="margin-top: 50px; margin-bottom: 60px;">
+      <div class="section-header-flex">
+        <h2 class="section-title" style="margin-bottom: 0;">SECTION 2 : 全員經典直拍 (MCOUNTDOWN 'HELLO' 4K)</h2>
+        <a href="#fancams-section" class="btn-more">MORE 直拍 ➔</a>
+      </div>
+      
+      <div class="grid">
+        <!-- 1. 崔玹碩 -->
+        <div class="window">
+          <div class="window-header">
+            <span>[📹 Fancam_HyunSuk.mp4]</span>
+            <div class="window-controls"><span></span><span></span><span></span></div>
+          </div>
+          <div class="window-body">
+            <span class="badge-tag">🦔 崔玹碩</span>
+            <h4 style="font-size: 0.85rem; color: var(--text-main); margin-bottom: 6px;">
+              [MPD직캠] 트레저 최현석 'HELLO' @MCOUNTDOWN
+            </h4>
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/E7bgOQACe8s" title="Choi Hyun Suk Fancam" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. 朴志焄 -->
+        <div class="window">
+          <div class="window-header">
+            <span>[📹 Fancam_Jihoon.mp4]</span>
+            <div class="window-controls"><span></span><span></span><span></span></div>
+          </div>
+          <div class="window-body">
+            <span class="badge-tag" style="background:#e0e7ff; color:#4338ca; border-color:#818cf8;">🐶 朴志焄</span>
+            <h4 style="font-size: 0.85rem; color: var(--text-main); margin-bottom: 6px;">
+              [MPD직캠] 트레저 지훈 'HELLO' @MCOUNTDOWN
+            </h4>
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/LLhdVNtSKhA" title="Jihoon Fancam" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. 尹材赫 -->
+        <div class="window">
+          <div class="window-header">
+            <span>[📹 Fancam_JaeHyuk.mp4]</span>
+            <div class="window-controls"><span></span><span></span><span></span></div>
+          </div>
+          <div class="window-body">
+            <span class="badge-tag" style="background:#fef3c7; color:#b45309; border-color:#f59e0b;">🦁 尹材赫</span>
+            <h4 style="font-size: 0.85rem; color: var(--text-main); margin-bottom: 6px;">
+              [MPD직캠] 트레저 윤재혁 'HELLO' @MCOUNTDOWN
+            </h4>
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/_Pfc7WmC4go" title="Yoon Jae Hyuk Fancam" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. 金俊奎 -->
+        <div class="window">
+          <div class="window-header">
+            <span>[📹 Fancam_Junkyu.mp4]</span>
+            <div class="window-controls"><span></span><span></span><span></span></div>
+          </div>
+          <div class="window-body">
+            <span class="badge-tag">🐨 金俊奎</span>
+            <h4 style="font-size: 0.85rem; color: var(--text-main); margin-bottom: 6px;">
+              [MPD직캠] 트레저 준규 'HELLO' @MCOUNTDOWN
+            </h4>
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/Dvz5ysUcIYo" title="Junkyu Fancam" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. 朴正武 -->
+        <div class="window">
+          <div class="window-header">
+            <span>[📹 Fancam_Jeongwoo.mp4]</span>
+            <div class="window-controls"><span></span><span></span><span></span></div>
+          </div>
+          <div class="window-body">
+            <span class="badge-tag">🐺 朴炡禹</span>
+            <h4 style="font-size: 0.85rem; color: var(--text-main); margin-bottom: 6px;">
+              [MPD직캠] 트레저 박정우 'HELLO' @MCOUNTDOWN
+            </h4>
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/9Oopbe7HrEw" title="Park Jeong Woo Fancam" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. 金道榮 -->
+        <div class="window">
+          <div class="window-header">
+            <span>[📹 Fancam_Doyoung.mp4]</span>
+            <div class="window-controls"><span></span><span></span><span></span></div>
+          </div>
+          <div class="window-body">
+            <span class="badge-tag">🐰 金道榮</span>
+            <h4 style="font-size: 0.85rem; color: var(--text-main); margin-bottom: 6px;">
+              [MPD직캠] 트레저 도영 'HELLO' @MCOUNTDOWN
+            </h4>
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/a5Q0uvODwfs" title="Doyoung Fancam" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7. 渡邊溫斗 -->
+        <div class="window">
+          <div class="window-header">
+            <span>[📹 Fancam_Haruto.mp4]</span>
+            <div class="window-controls"><span></span><span></span><span></span></div>
+          </div>
+          <div class="window-body">
+            <span class="badge-tag">🦋 渡邊溫斗</span>
+            <h4 style="font-size: 0.85rem; color: var(--text-main); margin-bottom: 6px;">
+              [MPD직캠] 트레저 하루토 'HELLO' @MCOUNTDOWN
+            </h4>
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/7FO5NbmtRks" title="Haruto Fancam" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8. 蘇庭煥 -->
+        <div class="window">
+          <div class="window-header">
+            <span>[📹 Fancam_Junghwan.mp4]</span>
+            <div class="window-controls"><span></span><span></span><span></span></div>
+          </div>
+          <div class="window-body">
+            <span class="badge-tag">🐮 蘇庭煥</span>
+            <h4 style="font-size: 0.85rem; color: var(--text-main); margin-bottom: 6px;">
+              [MPD직캠] 트레저 소정환 'HELLO' @MCOUNTDOWN
+            </h4>
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/NFVpjxliq84" title="So Jung Hwan Fancam" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9. 金本芳典 -->
+        <div class="window">
+          <div class="window-header">
+            <span>[📹 Fancam_Yoshi.mp4]</span>
+            <div class="window-controls"><span></span><span></span><span></span></div>
+          </div>
+          <div class="window-body">
+            <span class="badge-tag">🐯 金本芳典</span>
+            <h4 style="font-size: 0.85rem; color: var(--text-main); margin-bottom: 6px;">
+              [MPD직캠] 트레저 요시 'HELLO' @MCOUNTDOWN
+            </h4>
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/oKQgkkZrLpE" title="Yoshi Fancam" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- 10. 濱田朝光 -->
+        <div class="window">
+          <div class="window-header">
+            <span>[📹 Fancam_Asahi.mp4]</span>
+            <div class="window-controls"><span></span><span></span><span></span></div>
+          </div>
+          <div class="window-body">
+            <span class="badge-tag">🤖 濱田朝光</span>
+            <h4 style="font-size: 0.85rem; color: var(--text-main); margin-bottom: 6px;">
+              [MPD직캠] 트레저 아사히 'HELLO' @MCOUNTDOWN
+            </h4>
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/mlNU658bk98" title="Asahi Fancam" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 TREASURE SYSTEM VAULT. ALL RIGHTS RESERVED. ✨</p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+# AGENTS.md - TREASURE Cyber Vault 專案協作指南
+
+歡迎來到 **TREASURE Cyber Vault** 專案！本文件為 AI Agents (Cursor, Claude Code, GitHub Copilot 等) 的協作指南。
+當 AI 被要求修改程式碼、新增成員或擴充直拍影片時，請嚴格遵守本文件訂立的規則與結構。
+
+---
+
+## 1. 專案目的 (Project Purpose)
+本專案是一個專為 K-pop 團體 **TREASURE** 打造的粉紫復古電腦主題知識庫與直拍收藏網站。
+核心功能包含：
+- **成員檔案卡 (Member Profiles)**：首頁提供簡潔預覽卡片，點擊可進入詳細介紹頁面。
+- **直拍影片收藏庫 (Fancam Archives)**：嵌入成員的經典舞台 4K 直拍影片 (YouTube Embed)。
+- **高擴充性規範**：讓開發者或 AI Agent 能遵循統一標準，快速新增未完工成員的個人頁面與直拍。
+
+---
+
+## 2. 網頁整體風格與 UI 規範 (UI/UX Guidelines)
+- **視覺主題**：粉紫復古電腦視窗風格 (Retro Cyber PC Desktop Style)。
+- **字體規範**：
+  - 標題 / 視窗標題列 / 核心標籤 / 按鈕：統一採用像素字體 `Silkscreen`, monospace。
+  - 內文 / 簡介說明：採用清晰好讀的繁體中文字體 `Noto Sans TC`, sans-serif。
+- **去概念化規範**：
+  - **嚴禁在網頁畫面上顯示 `Y2K` 或 `y2k` 等概念描述文字**。
+  - 畫面抬頭統一顯示為 `TREASURE.exe`、`TREASURE Cyber Vault` 或 `SYSTEM DESKTOP`。
+- **配色計畫**：
+  - 主背景：薰衣草粉紫漸層 `radial-gradient(circle at 50% 0%, #fae8ff 0%, #f3e8ff 45%, #e9d5ff 100%)` 搭配點陣底紋 (Dot Grid)。
+  - 視窗背景：半透明極淺粉紫 `rgba(255, 255, 255, 0.94)`。
+  - 視窗標題列：夢幻漸層 `linear-gradient(90deg, #d8b4fe 0%, #f472b6 100%)`。
+  - 主要文字：深紫色 `#4C1D95` / 亮粉色 `#DB2777`。
+  - 邊框與陰影：復古電腦立體實色陰影 `5px 5px 0px rgba(168, 85, 247, 0.4)` 與紫框 `#C084FC`。
+
+---
+
+## 3. 頁面結構與運作邏輯 (Page Architecture)
+
+### 🏠 1. 首頁 (index.html) 雙區塊設計：
+- **SECTION 1：成員檢索目錄 (Member Directory)**
+  - 簡潔預覽卡片：僅展示視窗標題、職責標籤、姓名、生日 Emoji 與一句亮點描述。
+  - 已完成者提供 `VIEW PROFILE ➔` 按鈕連至個人頁；擴充中者顯示 `COMING SOON`。
+- **SECTION 2：全員經典直拍大集合 (All Fancams Archive)**
+  - 平鋪收錄全團成員的 MCOUNTDOWN 《HELLO》4K 舞台直拍播放器。
+
+### 🌸 2. 成員個人頁 (members/*.html) 兩段式設計：
+- **上半段**：成員詳細介紹視窗（詳細個人魅力簡介、生日、定位與標籤）。
+- **中間**：明確導覽按鈕 `🎬 點我看[成員名]專屬直拍 ⬇️`（平滑滾動至下段）。
+- **下半段**：該成員的專屬 4K 直拍嵌入播放器。
+
+---
+
+## 4. 稱謂與文字規範 (Naming Standards)
+- **職責與定位規範**：
+  - **嚴禁出現 `Leader` 或中文「隊長」字眼**（避免因隊長輪替導致資訊過期），僅保留 `MAIN RAPPER`, `MAIN DANCER`, `LEAD VOCAL` 等音樂舞蹈定位。
+- **Emoji 與生日規範**：
+  - 生日與代表符號**只保留 Emoji 本身**（例如 `1999.04.21 • 🦔`），絕不加「刺蝟」、「小狗」等中文說明。
+- **檔名規範**：
+  - 成員頁面檔名統一使用小寫英文與中劃線，例如 `members/choi-hyunsuk.html`。
+
+---
+
+## 5. AI 修改與新增內容規則 (Rules for AI)
+1. **樣式統一原則**：不可在 HTML 內新增獨立 `<style>`，所有樣式必須寫入 `css/style.css`。
+2. **零破壞原則**：修改或擴充新成員頁面時，不得改動現有成員頁面的 Layout 結構與配色。
