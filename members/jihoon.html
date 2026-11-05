@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jihoon | TREASURE Cyber Vault</title>
+  
+  <!-- 引進像素字體：Silkscreen (英文) + Zpix (中文像素字體) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/gh/TakWolf/zpix-pixel-font@v3.1.9/dist/zpix.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    /* 設定全站優先使用像素字體 */
+    body, h1, h2, h3, h4, p, span, a, button, div, th, td, blockquote {
+      font-family: 'Zpix', 'Silkscreen', monospace, "Courier New" !important;
+      font-smooth: never;
+      -webkit-font-smoothing: none;
+      -moz-osx-font-smoothing: unset;
+    }
+
+    /* 志焄專屬色調 (靛藍與亮紫) */
+    .profile-card {
+      background: rgba(255, 255, 255, 0.9);
+      border: 2px solid #818cf8;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 24px;
+      box-shadow: 4px 4px 0px rgba(129, 140, 248, 0.3);
+    }
+
+    .section-tag {
+      display: inline-block;
+      background: #4338ca;
+      color: #ffffff;
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      margin-bottom: 12px;
+    }
+
+    .quote-box {
+      background: #e0e7ff;
+      border-left: 5px solid #6366f1;
+      padding: 12px 16px;
+      margin: 15px 0;
+      color: #3730a3;
+      font-size: 0.92rem;
+      line-height: 1.6;
+    }
+
+    /* 像素細節卡片網格 */
+    .trivia-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 12px;
+      margin-top: 15px;
+    }
+
+    .trivia-item {
+      background: #f5f3ff;
+      border: 1.5px dashed #818cf8;
+      padding: 10px 14px;
+      border-radius: 6px;
+      color: #3730a3;
+      font-size: 0.88rem;
+      line-height: 1.5;
+    }
+
+    /* 排版表格 */
+    .pixel-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+      font-size: 0.88rem;
+    }
+
+    .pixel-table th {
+      background-color: #4338ca;
+      color: #ffffff;
+      border: 2px solid #3730a3;
+      padding: 8px 12px;
+      text-align: left;
+    }
+
+    .pixel-table td {
+      border: 2px solid #818cf8;
+      padding: 10px 12px;
+      background-color: #ffffff;
+      color: #3730a3;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header-content">
+      <a href="../index.html" class="logo">👾 TREASURE<span>.exe</span></a>
+      <nav class="nav-links">
+        <a href="../index.html">[ 返回桌面 BACK TO DESKTOP ]</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" style="padding-top: 30px; padding-bottom: 50px;">
+    
+    <!-- 主檔案視窗 -->
+    <div class="window" style="max-width: 820px; margin: 0 auto 30px;">
+      <div class="window-header">
+        <span>[🐶 Profile_JiHoon.exe]</span>
+        <div class="window-controls"><span></span><span></span><span></span></div>
+      </div>
+      <div class="window-body">
+        
+        <!-- 標頭與個人基本資料 -->
+        <div style="text-align: center; margin-bottom: 20px;">
+          <span class="badge-tag" style="background:#e0e7ff; color:#4338ca; border-color:#818cf8;">TREASURE 前隊長 · VOCAL · 舞蹈</span>
+          <h1 class="window-title" style="font-size: 1.8rem; margin: 10px 0 4px;">朴志焄 PARK JIHOON</h1>
+          <p class="window-subtitle">2000.03.14 • 🐶</p>
+          
+          <!-- 朴志焄照片 -->
+          <img src="../images/jihoon.jpg" alt="朴志焄" style="width: 100%; max-width: 280px; border: 3px solid #818cf8; border-radius: 10px; box-shadow: 5px 5px 0px rgba(99, 102, 241, 0.4); display: block; margin: 18px auto;">
+        </div>
+
+        <!-- 區塊 1：溫柔臉與搖滾心 -->
+        <div class="profile-card">
+          <span class="section-tag">GAP CHARM</span>
+          <h2 style="color: #312e81; font-size: 1.15rem; margin-bottom: 10px;">🎸 長著一張溫柔臉，內核是搖滾</h2>
+          <p style="color: #3730a3; font-size: 0.92rem; line-height: 1.7;">
+            朴志焄的外表很容易讓人先入為主：臉柔和、聲音穩、說話不急不緩，看起來是那種溫和型的人。但了解之後會發現，他的內核和外表完全不是一回事。
+          </p>
+          <div class="quote-box">
+            「他聽 Led Zeppelin、Black Sabbath，喜歡搖滾時尚。不是『為了人設說自己喜歡搖滾』那種，是歌單和穿搭都往那個方向走。外表看著軟，裡面是硬的，這個反差是朴志焄身上最先被注意到的地方。」
+          </div>
+        </div>
+
+        <!-- 區塊 2：聲帶與努力 -->
+        <div class="profile-card">
+          <span class="section-tag">HARD WORK</span>
+          <h2 style="color: #312e81; font-size: 1.15rem; margin-bottom: 10px;">🔥 聲帶出過問題，硬是靠練習把歌唱能力練成了武器</h2>
+          <p style="color: #3730a3; font-size: 0.92rem; line-height: 1.7;">
+            朴志焄的 vocal 不是那種天賦碾壓型的，是練出來的。
+          </p>
+          <p style="color: #3730a3; font-size: 0.92rem; line-height: 1.7; margin-top: 8px;">
+            他的聲帶曾經出過問題，這對一個 vocal 來說是很要命的事。但他沒有繞過去，是靠練習一點點把歌唱能力重新建立起來，最後練成了隊內可以拿得出手的武器。本人對自己的評價是：<strong>「我挺耐造的。」</strong>
+          </p>
+          <div style="background: #e0e7ff; padding: 12px; border-radius: 6px; margin-top: 10px; font-size: 0.9rem; color: #3730a3;">
+            💬 這句話放在他身上很準確。不是那種「我很強」的自信，是「我知道我扛得住」的底氣。粉絲喜歡他的點也在這裡：他不是沒經歷過難的部分，是經歷過了還站在這裡。
+          </div>
+        </div>
+
+        <!-- 區塊 3：不肉麻但有行動 -->
+        <div class="profile-card">
+          <span class="section-tag">ACTION & LOVE</span>
+          <h2 style="color: #312e81; font-size: 1.15rem; margin-bottom: 10px;">🤝 不擅長肉麻，但行動一直到位</h2>
+          <p style="color: #3730a3; font-size: 0.92rem; line-height: 1.7;">
+            朴志焄表達愛意的方式不是嘴上說。他自稱在 Weverse 上和粉絲每天嘮嗑就是最大的愛意表達，不擅長肉麻的話，但行動一直到位。
+          </p>
+          <p style="color: #3730a3; font-size: 0.92rem; line-height: 1.7; margin-top: 8px;">
+            作為前隊長，他在隊內的角色是氣氛粘合劑。不是那種靠煽情維系關係的類型，是日常裡一直在、一直在搭話、一直在把場子撐住的那種。弟弟們和他相處的方式也很放鬆，能鬧能開玩笑，說明這個哥哥讓人沒有距離感。
+          </p>
+          <div class="quote-box" style="background: #f5f3ff; border-color: #818cf8; color: #4338ca;">
+            粉絲圈有個說法：<strong>志焄是爸爸，玹碩是媽媽。</strong>這個分工某種程度上也說明了他在隊內的定位——穩的那一個，扛事的那一個。
+          </div>
+        </div>
+
+        <!-- 區塊 4：舞台穩定器 -->
+        <div class="profile-card">
+          <span class="section-tag">STAGE PRESENCE</span>
+          <h2 style="color: #312e81; font-size: 1.15rem; margin-bottom: 10px;">⚡ 舞台上的穩定器</h2>
+          <p style="color: #3730a3; font-size: 0.92rem; line-height: 1.7;">
+            朴志焄在舞台上的存在感不是最搶眼的那種，但他是穩定器。
+          </p>
+          <p style="color: #3730a3; font-size: 0.92rem; line-height: 1.7; margin-top: 8px;">
+            vocal 穩，舞蹈也在隊內可以站住，T5 小分隊裡和道榮、庭煥、俊奎、材赫一起發《MOVE》，舞蹈 line 的完成度不拖後腿。大型團體裡，這種「不搶話但舞台從不掉鏈子」的類型，往往是看得越久越覺得可靠的那一個。
+          </p>
+        </div>
+
+        <!-- 區塊 5：趣事網格 -->
+        <div class="profile-card">
+          <span class="section-tag">FUN FACTS</span>
+          <h2 style="color: #312e81; font-size: 1.15rem; margin-bottom: 6px;">👾 一些很朴志焄的事</h2>
+          <div class="trivia-grid">
+            <div class="trivia-item">🎸 <strong>搖滾魂：</strong>聽搖滾，喜歡搖滾時尚，和溫柔外表形成固定反差</div>
+            <div class="trivia-item">🛡️ <strong>堅韌內核：</strong>自我評價是「我挺耐造的」，對困難的態度很直接</div>
+            <div class="trivia-item">💬 <strong>Weverse 戰士：</strong>不擅長肉麻，但 Weverse 上和粉絲的日常互動很勤</div>
+            <div class="trivia-item">✨ <strong>氣氛粘合劑：</strong>隊內氣氛粘合劑，弟弟們在他面前很放鬆</div>
+            <div class="trivia-item">👑 <strong>前隊長職責：</strong>前隊長，2025 年起隊長由俊奎和 ASAHI 接任</div>
+          </div>
+          <p style="color: #4338ca; font-size: 0.88rem; margin-top: 12px; font-weight: bold;">
+            這些事放在一起，是一個外表柔和、內裡硬核、不怎麼說漂亮話但一直在做事的人。
+          </p>
+        </div>
+
+        <!-- 入坑路線圖 -->
+        <div class="profile-card">
+          <span class="section-tag">ROADMAP</span>
+          <h2 style="color: #312e81; font-size: 1.15rem; margin-bottom: 6px;">📌 入坑路線</h2>
+          <table class="pixel-table">
+            <thead>
+              <tr>
+                <th style="width: 15%;">順序</th>
+                <th style="width: 35%;">看什麼</th>
+                <th>看什麼點</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>《MOVE》T5 舞台</td>
+                <td>舞蹈 line 的完成度，先看舞台</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>vocal 現場 / 消音</td>
+                <td>練出來的唱功，穩定度</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>團綜 / 直播片段</td>
+                <td>不肉麻但一直在的氣氛粘合劑</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>聊音樂 / 聊搖滾的物料</td>
+                <td>溫柔臉和搖滾內核的反差</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>隊長時期的幕後</td>
+                <td>穩的那一個，扛事的那一個</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- 總結卡片 -->
+        <div style="background: linear-gradient(135deg, #e0e7ff, #c7d2fe); border: 2px solid #6366f1; border-radius: 10px; padding: 18px; text-align: center;">
+          <h3 style="color: #312e81; font-size: 1.05rem; margin-bottom: 8px;">🎯 一句話總結</h3>
+          <p style="color: #3730a3; font-size: 0.95rem; line-height: 1.6;">
+            <strong>長著溫柔臉，裝著搖滾心，聲帶出過問題卻把唱功練成了武器——<br>不擅長說漂亮話，但一直在做事。</strong>
+          </p>
+        </div>
+
+        <div style="text-align: center; margin-top: 25px;">
+          <a href="#jihoon-fancam" class="btn-pixel" style="padding: 10px 22px; background: linear-gradient(135deg, #6366f1, #4f46e5); border-color:#3730a3;">
+            🎬 點我看朴志焄專屬直拍 ⬇️
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- 直拍影片視窗 -->
+    <div id="jihoon-fancam" class="window" style="max-width: 820px; margin: 0 auto;">
+      <div class="window-header">
+        <span>[📹 Fancam_Jihoon.mp4]</span>
+        <div class="window-controls"><span></span><span></span><span></span></div>
+      </div>
+      <div class="window-body">
+        <span class="badge-tag" style="background:#e0e7ff; color:#4338ca; border-color:#818cf8;">MCOUNTDOWN 4K</span>
+        <h3 style="font-size: 0.9rem; margin-bottom: 10px; color: var(--text-main);">
+          [MPD직캠] 트레저 지훈 직캠 4K 'HELLO' (TREASURE JIHOON FanCam)
+        </h3>
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/LLhdVNtSKhA" title="Jihoon Fancam" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 TREASURE SYSTEM VAULT. ALL RIGHTS RESERVED. ✨</p>
+    </div>
+  </footer>
+
+</body>
+</html>

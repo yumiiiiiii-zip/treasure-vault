@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yoon Jae-hyuk | TREASURE Cyber Vault</title>
+  
+  <!-- 引進像素字體：Silkscreen (英文) + Zpix (中文像素字體) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/gh/TakWolf/zpix-pixel-font@v3.1.9/dist/zpix.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    /* 設定全站優先使用像素字體 */
+    body, h1, h2, h3, h4, p, span, a, button, div, th, td, blockquote {
+      font-family: 'Zpix', 'Silkscreen', monospace, "Courier New" !important;
+      font-smooth: never;
+      -webkit-font-smoothing: none;
+      -moz-osx-font-smoothing: unset;
+    }
+
+    /* 尹材赫專屬暖色系 (太陽黃與琥珀橘) */
+    .profile-card {
+      background: rgba(255, 255, 255, 0.9);
+      border: 2px solid #f59e0b;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 24px;
+      box-shadow: 4px 4px 0px rgba(245, 158, 11, 0.3);
+    }
+
+    .section-tag {
+      display: inline-block;
+      background: #d97706;
+      color: #ffffff;
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      margin-bottom: 12px;
+    }
+
+    .quote-box {
+      background: #fef3c7;
+      border-left: 5px solid #f59e0b;
+      padding: 12px 16px;
+      margin: 15px 0;
+      color: #78350f;
+      font-size: 0.92rem;
+      line-height: 1.6;
+    }
+
+    /* 像素細節卡片網格 */
+    .trivia-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 12px;
+      margin-top: 15px;
+    }
+
+    .trivia-item {
+      background: #fffbeb;
+      border: 1.5px dashed #fbbf24;
+      padding: 10px 14px;
+      border-radius: 6px;
+      color: #78350f;
+      font-size: 0.88rem;
+      line-height: 1.5;
+    }
+
+    /* 排版表格 */
+    .pixel-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+      font-size: 0.88rem;
+    }
+
+    .pixel-table th {
+      background-color: #d97706;
+      color: #ffffff;
+      border: 2px solid #b45309;
+      padding: 8px 12px;
+      text-align: left;
+    }
+
+    .pixel-table td {
+      border: 2px solid #f59e0b;
+      padding: 10px 12px;
+      background-color: #ffffff;
+      color: #78350f;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header-content">
+      <a href="../index.html" class="logo">👾 TREASURE<span>.exe</span></a>
+      <nav class="nav-links">
+        <a href="../index.html">[ 返回桌面 BACK TO DESKTOP ]</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" style="padding-top: 30px; padding-bottom: 50px;">
+    
+    <!-- 主檔案視窗 -->
+    <div class="window" style="max-width: 820px; margin: 0 auto 30px;">
+      <div class="window-header">
+        <span>[🦁 Profile_JaeHyuk.exe]</span>
+        <div class="window-controls"><span></span><span></span><span></span></div>
+      </div>
+      <div class="window-body">
+        
+        <!-- 標頭與個人基本資料 -->
+        <div style="text-align: center; margin-bottom: 20px;">
+          <span class="badge-tag" style="background:#fef3c7; color:#b45309; border-color:#f59e0b;">TREASURE 副唱 · 副舞 · 獅子座 🦁</span>
+          <h1 class="window-title" style="font-size: 1.8rem; margin: 10px 0 4px;">尹材赫 YOON JAE HYUK</h1>
+          <p class="window-subtitle">2001.07.23 • 🦁🍒</p>
+          
+          <!-- 尹材赫照片 -->
+          <img src="../images/jaehyuk.jpg" alt="尹材赫" style="width: 100%; max-width: 280px; border: 3px solid #f59e0b; border-radius: 10px; box-shadow: 5px 5px 0px rgba(245, 158, 11, 0.4); display: block; margin: 18px auto;">
+        </div>
+
+        <!-- 區塊 1：七間公司名片 -->
+        <div class="profile-card">
+          <span class="section-tag">CASTING STORY</span>
+          <h2 style="color: #78350f; font-size: 1.15rem; margin-bottom: 10px;">🌟 收到七間公司星探名片，卻是隊內唯一沒參加過甄選的人</h2>
+          <p style="color: #92400e; font-size: 0.92rem; line-height: 1.7;">
+            尹材赫曾收到 YG、SM、JYP、Woollim、Cube、樂華、Pledis 七間公司的星探名片。第一次拿到 YG 名片時，他還沒有想成為偶像的念頭。後來 YG 在開拍寶石盒的前幾個月又發出邀請，那時他才下定決心，加入 B Team。也因此，他是隊裡唯一沒參加過甄選的成員。
+          </p>
+          <div class="quote-box">
+            「這段經歷說明一件事：他不是『從小立志當偶像』的類型，是被機會找上門、然後認真接住的人。接住的方式是練習幾個月就上了寶石盒。」
+          </div>
+        </div>
+
+        <!-- 區塊 2：寶石盒的淚水與進步 -->
+        <div class="profile-card">
+          <span class="section-tag">GROWTH & EFFORT</span>
+          <h2 style="color: #78350f; font-size: 1.15rem; margin-bottom: 10px;">💧 練習幾個月就上寶石盒，被冷落過，也用舞台驚艷過</h2>
+          <p style="color: #92400e; font-size: 0.92rem; line-height: 1.7;">
+            拍攝寶石盒前隻練習了幾個月，當時唱歌和跳舞都不是特別好。某次分組對抗時沒有被其他成員選擇，但也是在那場表演中的表現驚艷了很多人，包括舞蹈老師也一直跟楊賢碩說材赫的好話。
+          </p>
+          <p style="color: #92400e; font-size: 0.92rem; line-height: 1.7; margin-top: 8px;">
+            寶石盒第九集有個被反覆提起的片段：準備舞蹈時一直跟不上大家，也挨了老師很多責罵，材赫哭著說自己已經很努力了卻還是達不到。那個瞬間讓很多人意識到，他和普通人一樣，會努力、會達不到、會無助地掉眼淚。
+          </p>
+          <div style="background: #fef3c7; padding: 12px; border-radius: 6px; margin-top: 10px; font-size: 0.9rem; color: #78350f;">
+            ✨ 後來寶石盒結束，過了整整一年半才出道。中間也有很多不好的言論和事情發生，但他一直練一直練。從寶石盒時期到出道，進步幅度和驚人蜕變是肉眼可見的。
+          </div>
+        </div>
+
+        <!-- 區塊 3：隱藏 Rapper -->
+        <div class="profile-card">
+          <span class="section-tag">HIDDEN TALENT</span>
+          <h2 style="color: #78350f; font-size: 1.15rem; margin-bottom: 10px;">🎤 定位是 vocal，卻是隱藏 rapper，隊長玹碩的大弟子</h2>
+          <p style="color: #92400e; font-size: 0.92rem; line-height: 1.7;">
+            明明定位是 vocal，卻是個隱藏的 rapper，也是隊長玹碩的大弟子。甚至在電台上跟另外三個 rap line 成員一起表演過。
+          </p>
+          <div class="quote-box" style="background: #fffbeb; border-color: #f59e0b; color: #b45309;">
+            這件事放在尹材赫身上很有意思：他的官方定位不靠前，但他會往沒被安排的方向練。不是搶位置，是「既然可以那就試試」。
+          </div>
+        </div>
+
+        <!-- 區塊 4：隊內小太陽 -->
+        <div class="profile-card">
+          <span class="section-tag">SUNSHINE ENERGY</span>
+          <h2 style="color: #78350f; font-size: 1.15rem; margin-bottom: 10px;">☀️ 隊裡的小太陽，搞笑和鼓勵都是認真的</h2>
+          <p style="color: #92400e; font-size: 0.92rem; line-height: 1.7;">
+            一直都是隊裡的小太陽。很努力地搞笑，很努力地在成員失落時給予鼓勵。與 ASAHI 一起負責舞台下的氣氛，五人以上聚餐必有他吵吵鬧鬧的聲音。親和力強到團綜裡被店裡的老人說要帶回家當女婿。
+          </p>
+          <p style="color: #92400e; font-size: 0.92rem; line-height: 1.7; margin-top: 8px; background: #fffbeb; padding: 10px; border-radius: 6px;">
+            💬 他的積極不是沒心沒肺的那種。因為知道自己的實力不足，所以更努力地練習唱歌跳舞——<strong>他的陽光是建立在「我知道我不夠好，但我在變好」之上的。</strong>
+          </p>
+        </div>
+
+        <!-- 區塊 5：保齡球經典片段 -->
+        <div class="profile-card">
+          <span class="section-tag">TEAMWORK & BOND</span>
+          <h2 style="color: #78350f; font-size: 1.15rem; margin-bottom: 10px;">🎳 保齡球打不好，怕拖累成員，最後用奇怪姿勢成功</h2>
+          <p style="color: #92400e; font-size: 0.92rem; line-height: 1.7;">
+            保齡球打得不是很好。在團綜中很害怕拖累成員，所以一直很沒自信，不想自己上場。但成員反而一直鼓勵他，最後終於用奇怪的姿勢成功了。（T-map ep.53）
+          </p>
+          <div style="background: #fef3c7; padding: 10px 14px; border-radius: 6px; margin-top: 8px; font-size: 0.88rem; color: #78350f;">
+            🤝 這個片段很能說明他在隊內的關係：他會怕拖累別人，成員會反過來推他一把。不是單方面的被照顧，是互相接著。
+          </div>
+        </div>
+
+        <!-- 區塊 6：趣事網格 -->
+        <div class="profile-card">
+          <span class="section-tag">FUN FACTS</span>
+          <h2 style="color: #78350f; font-size: 1.15rem; margin-bottom: 6px;">👾 一些很尹材赫的事</h2>
+          <div class="trivia-grid">
+            <div class="trivia-item">🍒 <strong>招牌動作：</strong>綽號「彩盒」，招牌動作是嘟嘴 + 臉旁邊比 Ya，尷尬或不知所措時會捂著嘴巴笑</div>
+            <div class="trivia-item">🍌 <strong>香蕉牛奶大師：</strong>擁有一張傳奇自拍照，甚至有一集團綜是他教另外兩個成員怎麼跟香蕉牛奶自拍；最喜歡喝的飲料是香蕉牛奶</div>
+            <div class="trivia-item">💇‍♂️ <strong>造型亮點：</strong>最近瀏海超爆長，已經完全遮住眼睛了</div>
+            <div class="trivia-item">📱 <strong>哥控證明：</strong>崇拜哥哥，覺得哥哥很優秀，iPad Pro 是哥哥送的</div>
+            <div class="trivia-item">🎬 <strong>Summer King：</strong>自導自演過一段 Summer King 短片</div>
+            <div class="trivia-item">👬 <strong>CP 大戶：</strong>隊內 CP 大戶，至少六隊！跟 ASAHI 的 A材 CP 是官配，最近跟弟弟炡禹的財政 CP 也一直搞事情</div>
+            <div class="trivia-item">🎓 <strong>溫馨畢業禮：</strong>因為疫情畢業典禮朋友跟成員都沒到場，T-map 成員為他補辦了一場畢業典禮，同學還祝他成功</div>
+            <div class="trivia-item">🥹 <strong>感性時刻：</strong>聽到粉絲真心話之後感動到快流淚</div>
+          </div>
+          <p style="color: #b45309; font-size: 0.88rem; margin-top: 12px; font-weight: bold;">
+            這些事放在一起，是一個親和力強、會搞笑、會自拍、會自導自演、被老人想帶回家當女婿、被成員補辦畢業典禮的人。
+          </p>
+        </div>
+
+        <!-- 入坑路線圖 -->
+        <div class="profile-card">
+          <span class="section-tag">ROADMAP</span>
+          <h2 style="color: #78350f; font-size: 1.15rem; margin-bottom: 6px;">📌 入坑路線</h2>
+          <table class="pixel-table">
+            <thead>
+              <tr>
+                <th style="width: 15%;">順序</th>
+                <th style="width: 35%;">看什麼</th>
+                <th>看什麼點</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>寶石盒第九集</td>
+                <td>哭著說跟不上大家的瞬間，先認識平凡而努力的他</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>T-map ep.53 保齡球篇</td>
+                <td>沒自信但被成員鼓勵，最後用奇怪姿勢成功</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>T-map 畢業典禮篇</td>
+                <td>成員為他補辦的畢業典禮，同學也出鏡</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>香蕉牛奶自拍教學</td>
+                <td>傳奇自拍照的誕生現場</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>電台 rap 表演</td>
+                <td>vocal 定位卻是隱藏 rapper，玹碩的大弟子</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>出道後飯拍</td>
+                <td>從寶石盒到出道的進步幅度，肉眼可見</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- 總結卡片 -->
+        <div style="background: linear-gradient(135deg, #fef3c7, #fde68a); border: 2px solid #f59e0b; border-radius: 10px; padding: 18px; text-align: center;">
+          <h3 style="color: #78350f; font-size: 1.05rem; margin-bottom: 8px;">🎯 一句話總結</h3>
+          <p style="color: #92400e; font-size: 0.95rem; line-height: 1.6;">
+            <strong>收到七間公司名片卻差點沒當偶像，練習幾個月就上寶石盒被冷落卻用舞台驚艷全場——<br>他是隊裡的小太陽，是默默努力的小星星，是知道自己不夠好所以更努力的那種人。🍒💙⚡️</strong>
+          </p>
+        </div>
+
+        <div style="text-align: center; margin-top: 25px;">
+          <a href="#jaehyuk-fancam" class="btn-pixel" style="padding: 10px 22px; background: linear-gradient(135deg, #f59e0b, #d97706); border-color:#b45309;">
+            🎬 點我看尹材赫專屬直拍 ⬇️
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- 直拍影片視窗 -->
+    <div id="jaehyuk-fancam" class="window" style="max-width: 820px; margin: 0 auto;">
+      <div class="window-header">
+        <span>[📹 Fancam_JaeHyuk.mp4]</span>
+        <div class="window-controls"><span></span><span></span><span></span></div>
+      </div>
+      <div class="window-body">
+        <span class="badge-tag" style="background:#fef3c7; color:#b45309; border-color:#f59e0b;">MCOUNTDOWN 4K</span>
+        <h3 style="font-size: 0.9rem; margin-bottom: 10px; color: var(--text-main);">
+          [MPD직캠] 트레저 윤재혁 직캠 4K 'HELLO' (TREASURE YOON JAE HYUK FanCam)
+        </h3>
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/S2gIuh_O-48" title="Yoon Jae Hyuk Fancam" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 TREASURE SYSTEM VAULT. ALL RIGHTS RESERVED. ✨</p>
+    </div>
+  </footer>
+
+</body>
+</html>
